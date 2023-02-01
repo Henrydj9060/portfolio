@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Hubballi&family=Roboto+Condensed:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+}
+
+header {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
+  padding: 10px 1rem;
+}
+
+header img {
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  grid-gap: 1rem;
+  flex-direction: row;
+}
+header nav ul li {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+section {
+  /* text-align: center; */
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile Style */
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+section .details {
+  padding: 50px;
+}
+section h1 {
+  font-size: 2.5rem;
+  font-family: "Hubballi";
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+section .img {
+  place-self: center;
+}
